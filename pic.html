@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>right</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background-color: rgba(243, 226, 149, 0.723); /* 深灰色背景 */
+    color: white; /* 白色文字 */
+  }
+
+  .content {
+    height: 50%;
+    padding: 20px;
+  }
+
+  @keyframes slide-animation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(0); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  #max{
+    width: 70vw;
+    height: 50vh;
+    align-items: center;
+    margin: 4vh ;
+    margin-top: 0%;
+  }
+  .re{
+    position: relative;
+    height: 400px;
+  }
+  .re ul{
+    list-style-type:none ;
+  }
+  .re ul>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  
+    transition: 1s;
+    opacity: 0;
+  }
+  .re ul>li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    border: 15px solid #fffbd6;
+  }
+  #max ol {
+    position: absolute; /* 使用绝对定位让圆点导航固定在轮播图的底部 */
+    bottom: 10px; /* 将导航指示器放置在底部 */
+    right: 10px; /* 将导航指示器放置在右侧 */
+    display: flex; /* 使用flex布局更合适，因为我们只需要一行圆点 */
+    gap: 1em; /* 设置圆点之间的间距 */
+    list-style: none; /* 移除默认的列表样式 */
+    padding: 0; /* 移除默认的内边距 */
+    margin: 0; /* 移除默认的外边距 */
+  }
+  
+  #max ol li {
+    width: 25px;
+    height: 25px; /* 使圆点的高度和宽度相同，形成圆形 */
+    background-color: #999999; /* 设置圆点的背景颜色 */
+    border-radius: 50%; /* 设置圆点的边框圆角为50%，形成圆形 */
+    cursor: pointer; /* 当鼠标悬停在圆点上时，显示指针 */
+    transition: background-color 0.3s; /* 当圆点状态改变时，背景颜色的过渡效果 */
+  }
+  
+  #max ol li.active {
+    background-color: #ffffff; /* 设置当前激活的圆点的背景颜色 */
+  }
+  
+  
+</style>
+</head>
+<body>
+
+<div id="max">
+  <div class="re">
+      <ul>
+          <li><img src="./resource/1.jpg" alt=""></li>
+          <li><img src="./resource/2.jpg" alt=""></li>
+          <li><img src="./resource/3.jpg" alt=""></li>
+          <li><img src="./resource/4.jpg" alt=""></li>
+          <li><img src="./resource/5.jpg" alt=""></li>
+      </ul>
+      <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ol>
+  </div>
+</div>
+
+<div class="content">
+  <h1>企业吸纳有激励</h1>
+  <p>企业招用毕业年度或离校2年内未就业高校毕业生、登记失
+    业的16—24岁青年， 可享受一次性吸纳就业补贴。
+    企业招用2023届及离校两年内未就业普通高校毕业生、登
+    记失业的16—24岁青年，可享受一次性扩岗补助。一次性扩岗补
+    助和一次性吸纳就业补贴不能重复享受。
+    企业招用登记失业半年以上的高校毕业生，可予以定额依次
+    扣减增值税、城市维护建设税、教育费附加、地方教育附加和企业
+    所得税优惠。
+    小微企业(含社会组织)招用离校2年内的未就业高校毕业
+    生，可申请享受社会保险补贴。
+    小微企业当年新招用高校毕业生等符合条件人员人数达到
+    一定比例的，可申请最高不超过300万元的创业担保贷款，由财
+    政给予贴息。
+    高校毕业生到中小微企业就业的，在职称评定、项目申请、荣
+    誉申报时享受与国有企事业单位同类人员同等待遇。
+    国有企业扩大高校毕业生招聘需求，符合相关规定的，经履
+    行出资人职责机构或其他企业主管部门同意，统筹考虑企业招聘
+    高校毕业生人数、自然减员情况和现有职工工资水平等因素，
+    2023年可给予一次性增人增资。
+    </p>
+    <h1>基层就业天地广</h1>
+    <p>高校毕业生到基层就业，可享受学费补偿和助学贷款代偿，
+      高定工资档次，放宽职称评审条件。
+      高校毕业生还可参加“三支一扶”计划（支教、支农、支医和帮
+      扶乡村振兴）、农村教师“特岗计划”、大学生志愿服务西部计划等
+      基层服务项目，服务期满后可享受考研加分、公务员定向招录、事
+      业单位专项招聘等政策。
+    </p>
+    <h1>自主创业有支持</h1>
+    <p>高校毕业生自主创业可参加创业培训，申请获得培训补贴。
+      可得到资金支持，免收有关行政事业性收费，享受税收优惠
+      政策，申请一次性创业补贴，申请最高20万元的创业担保贷款，
+      由财政给予贴息，合伙创业的还可适当提高贷款额度。
+      可在公共创业服务机构享受创业服务，获得咨询辅导、政策
+      落实、融资服务等服务，政府投资开发的孵化基地等创业载体还
+      会安排一定比例场地，免费向高校毕业生提供。
+      高校毕业生灵活就业的，可申请获得社会保险补贴。
+    </p>
+    <h1>就业服务广覆盖</h1>
+    <p>高校毕业生可通过国家大学生就业服务平台、高校就业网
+      站、国聘平台等国家有关部门、地方和高校的校园招聘等获取政
+      策文件、招聘岗位、服务指南等就业信息。
+      高校毕业生可参加教育系统组织的“万企进校园”招聘活动，
+      参加二级院系举办的专而精、小而优的小型招聘会。
+      困难毕业生可在毕业学年申请享受一次性求职创业补贴，还
+      可获得就业援助服务，对通过市场渠道确实难以就业的困难毕业
+      生，可通过公益性岗位兜底安置。
+      高校毕业生可以前往公共就业人才服务机构进行求职登记
+      和失业登记，提出就业需求，获得岗位信息、职业指导、职业培训、
+      就业见习等就业服务，咨询和申办就业补贴政策。
+      未就业高校毕业生可以通过下述平台网站，或通过微信、支
+      付宝等APP扫描二维码（附后）登录求职登记小程序，获取公共就
+      业服务帮助。未就业高校毕业生还可在人力资源社会保障政务服
+      务平台（https://www.12333.gov.cn），在线办理失业登记。
+    </p>
+    
+</div>
+<style>
+  .content{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
+  }
+  .content p{
+    color: #F67108;
+  }
+  .content h1{
+    color:#F64808;
+  }
+</style>
+</body>
+
+<script>
+  window.onload = function(){
+    var box=this.document.getElementsByClassName("re")[0];
+    var lik=box.getElementsByTagName("li");
+    function fun(i,j){//转换图片函数，就是把透明度改了一下
+      lik[i].style.opacity=1;
+      lik[j].style.opacity=0;
+      lik[i+5].style.backgroundColor="#ffffff";//改一下小图标
+      lik[j+5].style.backgroundColor="#00000000"
+    }
+    fun(0,1);//初始化下
+    var i =0;
+    function auto(){//轮播循环函数
+      if(++i>=5){
+        i=0;
+        fun(0,4);
+      }
+      else fun(i,i-1);
+    }
+    timer=this.setInterval(auto,2000);
+    box.onmouseover = function () { //鼠标划上去，停止轮播
+      console.log('good');
+      clearInterval(timer);
+    }
+    box.onmouseout = function () { //鼠标划出，继续轮播
+      timer = setInterval(auto, 2000); //调用定时器
+    }
+    var j =0;
+    for(;j<5;j++){//点击小图标也可以转换图片
+      lik[j+5].ind=j;
+      lik[j+5].onclick=function(){
+        fun(this.ind,i)
+        i=this.ind;
+      }
+    }
+  
+  }
+  
+</script>
+</html>
+
